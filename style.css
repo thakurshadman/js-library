@@ -2,11 +2,10 @@
     color: aliceblue;
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
 }
 
 .container{
-    justify-content: space-between;
     background-color: rgb(53, 48, 48);
     height: 100vh;
     width: 100vw;
@@ -32,6 +31,10 @@
     gap: 25px;
 }
 
+.lib-info>h2{
+    width: 100%;
+    text-align: center;
+}
 .lib-info>div{
     width: 100%;
     justify-content: space-around;
@@ -46,18 +49,20 @@ button{
 
 .bookgrid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    padding: 10px;
-    gap: 10px;
-    
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    row-gap: 10px;
+    column-gap: 10px;
+    padding: 5px;
+    justify-items: center;    
 }
 
 .card{
-    justify-self: center;
     background-color: royalblue;
-    aspect-ratio:16/9;
-    padding: 25px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    padding: 10px;
     justify-content: center;
+    border: 5px double black;
 }
 
 .card>.row{
